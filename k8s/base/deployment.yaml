@@ -35,7 +35,7 @@ spec:
 
       containers:
         - name: hotstar-app
-          image: IMAGE_PLACEHOLDER   # Replaced by Jenkins sed
+          image: hotstar-app   
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
