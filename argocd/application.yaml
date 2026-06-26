@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/d-mestry06/hotstar-clone-devsecops-gitops.git
     targetRevision: main
-    path: k8s
+    path: k8s/overlays/prod
 
   destination:
     server: https://kubernetes.default.svc
