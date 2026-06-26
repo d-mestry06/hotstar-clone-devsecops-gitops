@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hotstar
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/d-mestry06/hotstar-clone-devsecops-gitops.git
+    targetRevision: main
+    path: k8s
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hotstar
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=true
