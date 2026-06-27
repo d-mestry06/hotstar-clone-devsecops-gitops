@@ -7,4 +7,4 @@ resources:
 images:
 - name: hotstar-app
   newName: 358024208538.dkr.ecr.ap-south-1.amazonaws.com/hotstar-clone-devsecops-app
-  newTag: 12-5fa4423
+  newTag: 13-a3ee208
